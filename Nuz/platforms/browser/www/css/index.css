@@ -8,20 +8,6 @@ body {
     overflow: hidden;
 }
 
-.top-nav {
-    background-color: #fff;
-    border-bottom: 1px solid black;
-    position: fixed; 
-    z-index: 20;
-    top: 0; 
-    right: 0;
-    width: 100%; 
-    height: var(--section-height);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 #map-view {
     position: absolute;
     top: var(--section-height);

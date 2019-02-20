@@ -14,11 +14,9 @@ var app = {
             e.preventDefault();
         }, false);
 
-        uuid = device.uuid;
-        console.log(uuid);
-        mnf = device.manufacturer;
-        console.log(mnf);
-        loadSave();
+        if(device.platform !== "browser") {
+            uuid = device.uuid;
+        }
     },
 
     // Update DOM on a Received Event
