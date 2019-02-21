@@ -14,9 +14,14 @@ var app = {
             e.preventDefault();
         }, false);
 
-        if(device.platform !== "browser") {
+        plat = device.platform;
+        if(plat == "browser") {
+            uuid = "";
+        } else {
             uuid = device.uuid;
         }
+        
+
     },
 
     // Update DOM on a Received Event

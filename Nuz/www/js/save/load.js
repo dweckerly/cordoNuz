@@ -1,5 +1,5 @@
 function loadSave() {
-    postXHR(api + "load.php", "id=" + uuid + "&mnf=" + mnf, function(data) {
+    postXHR(api + "pages/start.php", "id=" + uuid + "&plat=" + plat, function(data) {
         if (data) {
             var obj = JSON.parse(data);
 
